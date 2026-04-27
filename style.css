@@ -1,0 +1,597 @@
+*{
+margin: 0px;
+padding: 0px;
+box-sizing: border-box;
+}
+body{
+background-color: antiquewhite;
+}
+.UperBer{
+width: 100%;
+height: 28px;
+background-color: #fc0202;
+color:  antiquewhite;
+display: flex;
+
+align-items: center;
+overflow: hidden;
+}
+.UperBer h5{
+animation: anime3 10s ease-in-out infinite;
+}
+@keyframes anime3{
+0% {
+transform: translateX(-100%);
+}
+100% {
+transform: translateX(500%);
+}
+}
+nav{
+width: 100%;
+height: 80px;
+background-color: #d4a106;
+display: flex;
+justify-content: space-around;
+align-items: center;
+position: sticky;
+top: 0;
+z-index: 1000;
+}
+nav h1{
+color: rgb(48, 49, 41); 
+}
+nav h1 span{
+color: #c8ff00;
+}
+nav ul{
+display: flex;
+gap: 25px;
+}
+nav ul li{
+list-style: none;
+transition: transform 0.4s ease;
+}
+nav ul li:hover{
+transform: scale(1.1);
+}
+nav ul li a{
+text-decoration: none;
+}
+nav button{
+height: 50px;
+width: 100px;
+border: 1px solid black;
+border-radius: 5px;
+border: none;
+background-color: black;
+color:  antiquewhite;
+transition: box-shadow 0.4s ease;
+}
+nav button:hover{
+box-shadow: 3px 3px 10px 1px rgb(61, 61, 61),-3px -3px 10px 1px rgb(61, 61, 61);
+}
+.hero{
+background-image: url(./image/hotel\ interio.jpg);
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+height: 100vh;
+height: 570px;
+width: 100%;
+background-position: center;
+display: flex;
+flex-direction: column;
+justify-content: center;
+gap: 20px;
+padding-left: 100px;
+color:  antiquewhite;
+}
+.hero h4 {
+color: #ffe600;
+font-size: 24px;
+}
+.hero h1{
+font-size: 70px;
+}
+.hero h6{
+font-size: 15px;
+}
+.hero .btn1{
+width: 140px;
+height: 50px;
+font-size: 15px;
+border-radius: 5px;
+border: none;
+transition: transform 0.4s ease;
+background-color: #ffe600;
+border: 1px solid gray;
+}
+.hero .btn1:hover{
+transform: scale(1.1);
+}
+.hero .btn2{
+width: 140px;
+height: 50px;
+margin-left: 17px;
+font-size: 15px;
+border-radius: 5px;
+border: none;
+transition: transform 0.4s ease;
+background-color: #d4a106;
+border: 1px solid gray;
+}
+.hero .btn2:hover{
+transform: scale(1.1);
+}
+.review{
+display: flex;
+justify-content:space-around;
+align-items: center;
+height: 200px;
+font-weight: bold;
+border-bottom: 1px solid rgb(175, 172, 172);
+border-radius: 0px 0px 100px 100px;
+background-color: rgb(24, 24, 24);
+color:  antiquewhite;
+}
+.review h1{
+font-size: 40px;
+}
+.review h6{
+font-size: 20px;
+}
+main{
+display: flex;
+gap:150px;
+height: 700px;
+align-items: center;
+padding-left: 80px;
+
+}
+.Mainimg img{
+height: 450px;
+width: 450px;
+border-radius: 30px 30px 30px 30px ;
+}
+.MainText{
+display:flex;
+flex-direction:column;
+gap: 20px;
+}
+.MainText h5{
+font-size:17px;
+}
+.MainText h1{
+font-size: 40px;
+}
+.MainText div{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.chose{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 80px;
+width: 100%;
+height: 480px;
+background-color: rgb(24, 24, 24);
+color:  antiquewhite;
+position: sticky;
+top: 0;
+z-index: 1;
+border-radius: 80px 80px 0px 0px ;
+}
+.chose h1{
+position: absolute;
+top: 100px;
+}
+.ChoseCard{
+display: flex;
+gap: 100px;
+position: relative;
+width: 100%;
+}
+.ChoseCard1{
+text-align: center;
+display: flex;
+flex-direction: column;
+gap: 10px;
+background-color: rgb(65, 64, 64);
+width: 300px;
+height: 150px;
+
+border-radius: 10px;
+}
+@keyframes anime1{
+0%{
+top:20px;
+}
+50%{
+top: 40px;
+}
+100%{
+top:20px;
+}
+}
+@keyframes anime2{
+0%{
+top:40px;
+}
+50%{
+top:20px;
+}
+100%{
+top:40px;
+}
+}    
+.stCard{
+position: absolute;
+left: 40px;
+animation: anime1 2s ease-in-out infinite;
+transition: box-shadow 0.4s ease;
+}
+.rdCard{
+position: absolute;
+left: 477px;
+animation: anime2 2s ease-in-out infinite;
+transition: box-shadow 0.4s ease;
+}
+.ndCard{
+position: absolute;
+left: 900px;
+animation: anime1 2s ease-in-out infinite;
+transition: box-shadow 0.4s ease;
+}
+.ndCard:hover{
+box-shadow: 3px 3px 10px 1px antiquewhite,-3px -3px 10px 1px antiquewhite;
+}
+.stCard:hover{
+box-shadow: 3px 3px 10px 1px antiquewhite,-3px -3px 10px 1px antiquewhite;
+}
+.rdCard:hover{
+box-shadow: 3px 3px 10px 1px antiquewhite,-3px -3px 10px 1px antiquewhite;
+}
+.menu{
+width: 100%;
+height: 1100px;
+background-color:  antiquewhite;
+display: flex;
+flex-direction: column;
+gap: 60px;
+position: relative;
+z-index: 2;
+border-top: 1 px solid black;
+border-radius: 100px 100px 0px 0px;
+}
+.menu h1{
+padding-left: 30px;
+padding-top: 30px;
+font-size: 40px;    
+}
+.MainMenu div img{
+height: 200px;
+width: 270px;
+border-radius: 10px;
+}
+.MainMenu div{
+background-color:  antiquewhite;
+width:300px;
+height: 320px;
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 10px;
+border-radius: 10px;
+box-shadow: 1px 1px 10px 3px gray;
+transition: box-shadow 0.4s ease;
+}
+.MainMenu div:hover{
+box-shadow: 2px 2px 10px 5px black;
+}
+.MainMenu{
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+justify-items: center;
+align-items: center;
+gap: 100px;
+}
+.MainMenu div button{
+width: 100px;
+height: 30px;
+transition: transform 0.4s ease;
+}
+.MainMenu div button:hover{
+transform: scale(1.1);
+}
+.SeeMore{
+display: flex;
+justify-content: center;
+align-items: center;
+}
+.SeeMore button{
+border-radius: 10px;
+height: 50px;
+width: 150px;
+background-color: rgb(49, 48, 48);
+color: antiquewhite;
+transition: transform 0.4s ease;
+}
+.SeeMore button:hover{
+transform: scale(1.1);
+}
+.reserve{
+display: flex;
+justify-content: center;
+align-items: center;
+width: 100%;
+height: 300px;
+position: relative;
+z-index: 2;
+background-color:#d4a106 ;
+}
+.SubReserve{
+display: flex;
+flex-direction: column;
+gap: 20px;
+background-color:  antiquewhite;
+height: 150px;
+width: 80%;
+}
+.reserve h1{
+text-align: center;
+color: rgb(0, 0, 0);
+padding-top: 20px;
+}
+.SubReserve1{
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 60px;
+}
+.SubReserve1 input{
+height: 40px;
+width: 200px;
+}
+.SubReserve1 button{
+height: 40px;
+width: 90px;
+background-color: black;
+color:  antiquewhite;
+transition: box-shadow 0.4s ease;
+}
+.SubReserve1 button:hover{
+box-shadow: 3px 3px 10px 1px rgb(61, 61, 61),-3px -3px 10px 1px rgb(61, 61, 61);
+}
+footer{
+background-color: rgb(24, 24, 24);
+display: flex;
+justify-content: center;
+align-items: center;
+height: 300px;
+position: relative;
+z-index: 2;
+gap: 180px;
+}
+.foot1{
+color:  antiquewhite;
+}
+.foot1 h1{
+color:  rgb(48, 49, 41);
+}
+.foot1 h1 span{
+color: #c8ff00;
+}
+.foot2{
+color:  antiquewhite;
+}
+.foot3{
+display: flex;
+flex-direction: column;
+gap: 7px;
+color:  antiquewhite;
+}
+.foot3 input{
+height: 30px;
+width: 130px;
+}
+.footer{
+display: flex;
+justify-content: center;
+align-items: center;
+color:  antiquewhite;
+background-color: black;
+height: 30px;
+    position: relative;
+    z-index: 2;
+width: 100%;
+}
+
+/* Mobile screen-er jonno */
+
+@media screen and (max-width: 768px) {
+nav{
+flex-direction: column;
+height: auto;
+gap: 15px;
+padding: 20px 0px 20px 0px; 
+}   
+nav ul{
+flex-wrap: wrap;
+padding-left: 20px;
+}
+nav button{
+height: 30px;
+width: 180px;
+}
+nav button h4{
+font-size: smaller;
+}
+.hero{
+height: 400px;
+padding: 10px 0px 10px 0px;
+flex-direction: column;
+text-align: center;
+align-items:center ;
+}
+.   hero h4 {
+font-size: 15px;
+}
+.hero h1{
+font-size: 30px;
+}
+.hero h6{
+font-size: 15px;
+}
+.hero .btn1{
+width: 100px;
+height: 35px;
+font-size: 8px;
+}
+.hero .btn2{
+width: 100px;
+height: 35px;
+margin-left: 17px;
+font-size: 8px;
+}
+.review{
+display: grid;
+grid-template-columns: 1fr 1fr;
+align-items:center;
+justify-items: center;
+gap: 10px;
+border-radius: 0px 0px 50px 50px;
+}
+.review div {
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+}
+.review h1{
+font-size: 30px;
+}
+.review h6{
+font-size: 13px;
+}
+main{
+display: flex;
+flex-direction: column;
+gap: 50px;
+height: auto;
+align-items: center;
+padding: 15px 10px 20px 10px;
+}
+.Mainimg img{
+height: 300px;
+width: 300px;
+border-radius: 30px 30px 30px 30px ;
+}
+.MainText{
+display:flex;
+flex-direction:column;
+gap: 15px;
+padding-left: 20px;
+}
+.MainText h5{
+font-size:10px;
+}
+.MainText h1{
+font-size: 20px;
+}
+main h4{
+font-size: 12px;
+}
+.MainText div{
+display: flex;
+flex-direction: column;
+gap: 10px;
+}
+.chose {
+        height: auto;
+        padding: 60px 20px;
+    .chose h1 {
+        display: flex;
+        flex-direction: column;
+        height: auto !important;
+        padding: 40px 15px !important;
+        border-radius: 50px 50px 0 0 !important;
+position: static;
+        margin-bottom: 40px; 
+        text-align: center;
+        z-index: 0;
+    }
+    .chose h1 {
+        position: static !important;
+        font-size: 28px !important;
+        margin-bottom: 30px;
+}
+.ChoseCard {
+        display: flex;
+flex-direction: column;
+        align-items: center;
+        gap: 30px; 
+        position: static;
+        gap: 20px;
+        position: static !important;
+}
+    .ChoseCard1 {
+        position: static;
+        width: 90%;
+        height: auto;
+        padding: 20px;
+        animation: none;
+    }
+    .stCard, .ndCard, .rdCard {
+    .ChoseCard1, .stCard, .ndCard, .rdCard {
+        position: static !important;
+left: 0 !important;
+        width: 90% !important;
+        margin: 0 auto !important;
+        height: auto !important;
+        min-height: 160px;
+        padding: 20px;
+}
+    .menu{
+    height: auto;
+    padding: 20px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    position: static;
+    z-index: 0 ;
+}
+.MainMenu{
+    display: flex;
+    flex-direction: column;
+}
+.reserve{
+    height: auto;
+    padding: 20px 0px 20px 0px;
+    position: static;
+    z-index: 0;
+}
+.SubReserve{
+    flex-direction: column;
+    padding: 10px 0px 10px 0px;
+    height: auto;
+}
+.SubReserve1{
+    flex-direction: column;
+}
+footer{
+     display: flex;
+     flex-direction: column;
+     height: auto;
+     position: static;
+     z-index: 0;
+     gap: 50px;
+     padding: 20px 0px 20px 0px;
+}
+.footer{
+    position: static;
+    z-index: 0;
+}
